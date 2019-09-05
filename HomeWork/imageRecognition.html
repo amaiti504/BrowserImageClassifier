@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+        <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Image Recognition 
+                <small>Tensorflow JS</small>
+            </h1>
+            <div class="avatar-upload">
+                <div class="avatar-edit">
+                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" onchange="readURL(this)" />
+                    <label for="imageUpload"></label>
+                </div>
+                 
+                
+                    <img id="img" src="http://placehold.it/180" />
+                
+
+                <div id="prediction" ></div>
+            </div>
+        </div>
+    </body>
+</html>
